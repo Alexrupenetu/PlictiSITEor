@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+/* Navigation Menu */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+section {
+    margin: 2em 0;
+}
+
+section h1, section h2 {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 1em 0;
+    margin-top: 2em;
+    position:relative;
+    bottom:0;
+    width: 100%;
+    z-index:10;
+}
+
+.highlight{
+    color: #ff6347; /* Example color: Tomato */
+    font-weight: bold;
+    display: inline-block; /* Required for animation to work on hover */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Bounce animation on hover */
+.highlight:hover {
+    animation: bounce 0.6s infinite;
+}
+
+/* Keyframes for bounce */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up slightly */
+    }
+}
+
+.siteTitle{
+    text-align:center;
+    color: #EDBF05;
+}
+
+.meniuJocuri{
+    display: flex;
+    flex-wrap: wrap; /* Allows child elements to wrap on smaller screens */
+    justify-content: center; /* Centers the divs */
+}
+
+.gameOption {
+    flex: 1 1 300px; /* Flexible width: 1 unit, minimum 300px */
+    max-width: 400px; /* Limit the maximum width */
+    margin: 10px;
+    padding: 40px;
+    background-color:#ff6347;
+    border-radius:10px;
+}
+
+.imaginiJocuri{
+    
+    width: 80%; /* Container width */
+    max-width: 600px; /* Optional: Prevent the container from being too wide */
+    margin: 0 auto; /* Center the container */
+    border: 2px solid #EDBF05; /* Optional: Border for visibility */
+    border-radius:10px;
+
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #EDBF05;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-top: 15px;
+  }
+  
+  .button:hover {background-color:#D8AD00}
+  
+  .button:active {
+    background-color: #D8AD00;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
