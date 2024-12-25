@@ -4,22 +4,25 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: #E4E3E3;
 }
 
-header {
-    background: #333;
-    color: white;
-    padding: 1em 0;
+header h1{
+    background: #333333;
+    padding: 0px;
+    margin: 0;
+    z-index:0;
 }
 
 /* Navigation Menu */
-.menu ul {
+.menu ul { 
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 8px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    background: #ff6347;
 }
 
 .menu ul li {
@@ -27,14 +30,16 @@ header {
 }
 
 .menu ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 30px;
     transition: background-color 0.3s ease;
 }
 
 .menu ul li a:hover {
-    background: #555;
+    background:  #EDBF05;
     border-radius: 5px;
 }
 
@@ -73,7 +78,7 @@ footer {
 
 /* Bounce animation on hover */
 .highlight:hover {
-    animation: bounce 0.6s infinite;
+    animation: bounce 0.6s 2;
 }
 
 /* Keyframes for bounce */
@@ -89,12 +94,28 @@ footer {
 .siteTitle{
     text-align:center;
     color: #EDBF05;
+    font-size: 70px;
 }
 
-.meniuJocuri{
+
+.meniuMare {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 50px; /* Adjust space between items */
+    justify-content: center; /* Center items horizontally */
+    width: 100%; 
+    margin: 0 auto; /* Center the grid container on the page */
+}
+
+
+.afisajJocuri{
     display: flex;
-    flex-wrap: wrap; /* Allows child elements to wrap on smaller screens */
+    flex-wrap: wrap; 
     justify-content: center; /* Centers the divs */
+}
+
+.afisajJocuri:hover{
+    animation: bounce 1s 1;
 }
 
 .gameOption {
@@ -104,6 +125,7 @@ footer {
     padding: 40px;
     background-color:#ff6347;
     border-radius:10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
 }
 
 .imaginiJocuri{
@@ -113,7 +135,6 @@ footer {
     margin: 0 auto; /* Center the container */
     border: 2px solid #EDBF05; /* Optional: Border for visibility */
     border-radius:10px;
-
 }
 
 .button {
