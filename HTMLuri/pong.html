@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Menu Page</title>
+    <link rel="stylesheet" href="../CSSuri/styles.css">
+    <link rel="stylesheet" href="../CSSuri/pongstyles.css">
+    
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <h1 class = "siteTitle">Plicti<span class = "highlight">SITE</span>or</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="../HTMLuri/index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mainBody">
+        <h1> PING PONG</h1>
+
+    <div id = "gameContainer">
+        <div id="ScoreDiv">
+            <p id="Player1">0</p> 
+            <p id="Player2">0</p>
+        </div>
+    <canvas></canvas>
+    <div id="WinMsg">
+        <p>Player<span id="WinPlayerId"></span> Wins The Game.</p>
+    </div>
+    </div>
+
+    <button class = "button" id="reset" onclick=location.reload()>Restart Game</button>
+    
+    
+    </div>
+    <script src="../JAVAuri/PongScript.js"></script>
+
+    <footer>
+        <p>© 2024 Simple Menu Page. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
