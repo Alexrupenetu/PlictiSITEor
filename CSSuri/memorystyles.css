@@ -57,9 +57,11 @@ body{
 .card-image{
     height: 125px;
     width: 125px;
+    border-radius: 10px;
     transform: rotateY(90deg); 
     transition: all ease-in 0.25s;
     mix-blend-mode: multiply;
+    border-radius: 50%;
 }
 
 .progress-container{
